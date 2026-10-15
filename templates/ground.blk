@@ -1,0 +1,395 @@
+selected_tag:t=""
+bin_dump_file:t=""
+
+mission_settings{
+  player{
+    army:i=1
+    wing:t="You"
+  }
+
+  player_teamB{
+    army:i=2
+  }
+
+  mission{
+    type:t="singleMission"
+    level:t="levels/hangar_field.bin"
+    environment:t="Day"
+    weather:t="clear"
+    chapter:t="TestDrive"
+    locName:t="Ask3lad Test Drive 3.0 - Ground"
+    locDesc:t="If you like these Test Drives and want to help out, feel free to become a YouTube Member - https://www.youtube.com/@Ask3lad/join"
+    campaign:t="Ask3lad"
+  }
+}
+
+imports{}
+triggers{
+  isCategory:b=yes
+  is_enabled:b=yes
+}
+mission_objectives{
+  isCategory:b=yes
+  is_enabled:b=yes
+}
+variables{}
+dialogs{}
+airfields{}
+effects{}
+units{
+  tankModels{
+    name:t="You"
+    tm:m=[[0.103914, 0, 0.994586] [0, 1, 0] [-0.994586, 0, 0.103914] [14.5264, 45.9717, -644.368]]
+    unit_class:t="userVehicles/us_m2a4"
+    objLayer:i=1
+    closed_waypoints:b=no
+    isShipSpline:b=no
+    shipTurnRadius:r=100
+    weapons:t="us_m2a4_default"
+    bullets0:t=""
+    bullets1:t=""
+    bullets2:t=""
+    bullets3:t=""
+    bulletsCount0:i=103
+    bulletsCount1:i=0
+    bulletsCount2:i=0
+    bulletsCount3:i=0
+    crewSkillK:r=0
+    applyAllMods:b=no
+
+    props{
+      army:i=1
+      count:i=1
+      formation_type:t="rows"
+      formation_div:i=3
+      formation_step:p2=2.5, 2
+      formation_noise:p2=0.1, 0.1
+      uniqueName:t="Ask3lad"
+      attack_type:t="fire_at_will"
+    }
+    way{}
+  }
+  tankModels{
+    name:t="Target_Ground_01"
+    tm:m=[[0.426593, 0, -0.904444] [0, 1, 0] [0.904444, 0, 0.426593] [-114.012, 38.6707, -492.543]]
+    unit_class:t="germ_leopard_2a4"
+    objLayer:i=1
+    closed_waypoints:b=no
+    isShipSpline:b=no
+    shipTurnRadius:r=100
+    weapons:t="germ_leopard_2a4_default"
+    bullets0:t=""
+    bullets1:t=""
+    bullets2:t=""
+    bullets3:t=""
+    bulletsCount0:i=0
+    bulletsCount1:i=0
+    bulletsCount2:i=0
+    bulletsCount3:i=0
+    crewSkillK:r=0
+    applyAllMods:b=no
+    props{
+      army:i=2
+      count:i=1
+      attack_type:t="dont_aim"
+    }
+    way{}
+  }
+  tankModels{
+    name:t="Target_Ground_02"
+    tm:m=[[0.426601, 0, -0.90444] [0, 1, 0] [0.90444, 0, 0.426601] [-1.72193, 31.2325, -354.086]]
+    unit_class:t="germ_marder_1a3"
+    objLayer:i=1
+    closed_waypoints:b=no
+    isShipSpline:b=no
+    shipTurnRadius:r=100
+    weapons:t="germ_marder_1a3_default"
+    bullets0:t=""
+    bullets1:t=""
+    bullets2:t=""
+    bullets3:t=""
+    bulletsCount0:i=0
+    bulletsCount1:i=0
+    bulletsCount2:i=0
+    bulletsCount3:i=0
+    crewSkillK:r=0
+    applyAllMods:b=no
+    props{
+      army:i=2
+      count:i=1
+      attack_type:t="dont_aim"
+    }
+    way{}
+  }
+  tankModels{
+    name:t="Target_Ground_03"
+    tm:m=[[0.390731, 0, -0.920505] [0, 1, 0] [0.920505, 0, 0.390731] [-129.239, 31.3635, -312.51]]
+    unit_class:t="us_m1a1_aim_abrams"
+    objLayer:i=1
+    closed_waypoints:b=no
+    isShipSpline:b=no
+    shipTurnRadius:r=100
+    weapons:t="us_m1a1_aim_abrams_default"
+    bullets0:t=""
+    bullets1:t=""
+    bullets2:t=""
+    bullets3:t=""
+    bulletsCount0:i=0
+    bulletsCount1:i=0
+    bulletsCount2:i=0
+    bulletsCount3:i=0
+    crewSkillK:r=0
+    applyAllMods:b=no
+    props{
+      army:i=2
+      count:i=1
+      attack_type:t="dont_aim"
+    }
+    way{}
+  }
+  tankModels{
+    name:t="Target_Ground_04"
+    tm:m=[[0.390731, 0, -0.920505] [0, 1, 0] [0.920505, 0, 0.390731] [-219.106, 35.572, -80.7814]]
+    unit_class:t="germ_leopard_2a6"
+    objLayer:i=1
+    closed_waypoints:b=no
+    isShipSpline:b=no
+    shipTurnRadius:r=100
+    weapons:t="germ_leopard_2a6_default"
+    bullets0:t=""
+    bullets1:t=""
+    bullets2:t=""
+    bullets3:t=""
+    bulletsCount0:i=0
+    bulletsCount1:i=0
+    bulletsCount2:i=0
+    bulletsCount3:i=0
+    crewSkillK:r=0
+    applyAllMods:b=no
+    props{
+      army:i=2
+      count:i=1
+      attack_type:t="dont_aim"
+    }
+    way{}
+  }
+  tankModels{
+    name:t="Target_Ground_05"
+    tm:m=[[0.325568, 0, -0.945519] [0, 1, 0] [0.945519, 0, 0.325568] [-263.98, 51.6585, 190.966]]
+    unit_class:t="uk_challenger_2_dorchester"
+    objLayer:i=1
+    closed_waypoints:b=no
+    isShipSpline:b=no
+    shipTurnRadius:r=100
+    weapons:t="uk_challenger_2_dorchester_default"
+    bullets0:t=""
+    bullets1:t=""
+    bullets2:t=""
+    bullets3:t=""
+    bulletsCount0:i=0
+    bulletsCount1:i=0
+    bulletsCount2:i=0
+    bulletsCount3:i=0
+    crewSkillK:r=0
+    applyAllMods:b=no
+    props{
+      army:i=2
+      count:i=1
+      attack_type:t="dont_aim"
+    }
+    way{}
+  }
+  tankModels{
+    name:t="Target_Ground_Mover"
+    tm:m=[[0.803502, 0, 0.595303] [0, 1, 0] [-0.595303, 0, 0.803502] [-428.949, 34.0834, -99.5404]]
+    unit_class:t="germ_flakpz_I_Gepard"
+    objLayer:i=1
+    closed_waypoints:b=no
+    isShipSpline:b=no
+    shipTurnRadius:r=100
+    weapons:t="germ_flakpz_I_Gepard_default"
+    bullets0:t=""
+    bullets1:t=""
+    bullets2:t=""
+    bullets3:t=""
+    bulletsCount0:i=0
+    bulletsCount1:i=0
+    bulletsCount2:i=0
+    bulletsCount3:i=0
+    crewSkillK:r=0
+    applyAllMods:b=no
+    props{
+      army:i=2
+      count:i=1
+      attack_type:t="dont_aim"
+    }
+    way{}
+  }
+  armada{
+    name:t="Target_Air_01"
+    tm:m=[[-0.986687, 0, 0.162629] [0, 1, 0] [-0.162629, 0, -0.986687] [4127.58, 1510.71, 1397.4]]
+    unit_class:t="f_16am_block_20_mlu_netherlands"
+    objLayer:i=1
+    closed_waypoints:b=yes
+    isShipSpline:b=no
+    shipTurnRadius:r=100
+    weapons:t="f_16am_block_20_mlu_netherlands_default"
+    bullets0:t=""
+    bullets1:t=""
+    bullets2:t=""
+    bullets3:t=""
+    bulletsCount0:i=0
+    bulletsCount1:i=0
+    bulletsCount2:i=0
+    bulletsCount3:i=0
+    crewSkillK:r=0
+    applyAllMods:b=no
+    props{
+      army:i=2
+      count:i=1
+      altLimit:r=6000
+      attack_type:t="dont_aim"
+      skill:i=4
+      speed:r=300
+      plane{
+        wing_formation:t="Diamond"
+        ai_skill:t="NORMAL"
+        task:t="FLY_WAYPOINT"
+      }
+    }
+    way{}
+  }
+  armada{
+    name:t="Target_Air_02"
+    tm:m=[[-0.986687, 0, 0.162629] [0, 1, 0] [-0.162629, 0, -0.986687] [4127.58, 500, 1397.4]]
+    unit_class:t="dummy_immortal"
+    objLayer:i=1
+    closed_waypoints:b=yes
+    isShipSpline:b=no
+    shipTurnRadius:r=100
+    weapons:t=""
+    bullets0:t=""
+    bullets1:t=""
+    bullets2:t=""
+    bullets3:t=""
+    bulletsCount0:i=0
+    bulletsCount1:i=0
+    bulletsCount2:i=0
+    bulletsCount3:i=0
+    crewSkillK:r=0
+    applyAllMods:b=no
+    props{
+      army:i=2
+      count:i=1
+      attack_type:t="dont_aim"
+      skill:i=4
+      speed:r=300
+    }
+    way{}
+  }
+  armada{
+    name:t="Target_Heli_01"
+    tm:m=[[-0.999048, 0, -0.0436191] [0, 1, 0] [0.0436191, 0, -0.999048] [1927.32, 200, 235.481]]
+    unit_class:t="ka_52"
+    objLayer:i=1
+    closed_waypoints:b=yes
+    isShipSpline:b=no
+    shipTurnRadius:r=100
+    weapons:t="ka_52_default"
+    bullets0:t=""
+    bullets1:t=""
+    bullets2:t=""
+    bullets3:t=""
+    bulletsCount0:i=0
+    bulletsCount1:i=0
+    bulletsCount2:i=0
+    bulletsCount3:i=0
+    crewSkillK:r=0
+    applyAllMods:b=no
+    props{
+      army:i=2
+      count:i=1
+      altLimit:r=550
+      attack_type:t="fire_at_will"
+      skill:i=4
+      speed:r=50
+      plane{
+        wing_formation:t="Diamond"
+        ai_skill:t="NORMAL"
+        task:t="FLY_WAYPOINT"
+      }
+    }
+    way{}
+  }
+  armada{
+    name:t="Target_Heli_02"
+    tm:m=[[-0.999048, 0, -0.0436191] [0, 1, 0] [0.0436191, 0, -0.999048] [16100, 200, 235.481]]
+    unit_class:t="dummy_immortal"
+    objLayer:i=1
+    closed_waypoints:b=yes
+    isShipSpline:b=no
+    shipTurnRadius:r=100
+    weapons:t=""
+    bullets0:t=""
+    bullets1:t=""
+    bullets2:t=""
+    bullets3:t=""
+    bulletsCount0:i=0
+    bulletsCount1:i=0
+    bulletsCount2:i=0
+    bulletsCount3:i=0
+    crewSkillK:r=0
+    applyAllMods:b=no
+    props{
+      army:i=2
+      count:i=1
+      attack_type:t="fire_at_will"
+      skill:i=4
+      speed:r=50
+    }
+    way{}
+  }
+  ships{
+    name:t="Target_Ship_01"
+    tm:m=[[0.173648, 0, 0.984808] [0, 1, 0] [-0.984808, 0, 0.173648] [-3987.79, 0, 821.102]]
+    unit_class:t="ussr_destroyer_rckt_pr956"
+    objLayer:i=1
+    closed_waypoints:b=no
+    isShipSpline:b=no
+    shipTurnRadius:r=100
+    weapons:t="ussr_destroyer_rckt_pr956_default"
+    bullets0:t=""
+    bullets1:t=""
+    bullets2:t=""
+    bullets3:t=""
+    bulletsCount0:i=0
+    bulletsCount1:i=0
+    bulletsCount2:i=0
+    bulletsCount3:i=0
+    crewSkillK:r=0
+    applyAllMods:b=no
+    props{
+      army:i=2
+      count:i=1
+      attack_type:t="return_fire"
+    }
+    way{}
+  }
+}
+
+areas{}
+objLayers{
+  layer{
+    enabled:b=yes
+  }
+  layer{
+    enabled:b=yes
+  }
+  layer{
+    enabled:b=yes
+  }
+  layer{
+    enabled:b=yes
+  }
+}
+wayPoints{}
