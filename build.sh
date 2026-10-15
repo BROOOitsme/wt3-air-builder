@@ -24,7 +24,7 @@ set -euo pipefail
 
 REPO_URL="https://github.com/BROOOitsme/wt3-air-builder.git"
 REPO_BRANCH="main"
-ENTRY_SCRIPT="wt3-builder-air.py"
+ENTRY_SCRIPT="wt3-air-v3.py"
 BIN_NAME="wt3-air-builder"
 RELEASE_NAME="wt3-air-builder-release"
 
