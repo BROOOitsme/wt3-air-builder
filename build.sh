@@ -18,7 +18,7 @@
 #   - Distro packages needed for the venv (asked via sudo, once)
 #   - The output folder you point it at
 
-set -euo pipefail
+set -eo pipefail
 
 # ---------- Configurable ----------
 
