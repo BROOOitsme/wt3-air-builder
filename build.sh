@@ -32,7 +32,12 @@ RELEASE_NAME="wt3-air-builder-release"
 
 OUTPUT_PARENT="${1:-$PWD}"
 OUTPUT_DIR="$OUTPUT_PARENT/$RELEASE_NAME"
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# BASH_SOURCE is empty when piped via `curl | bash`. Fall back to PWD.
+if [ -n "${BASH_SOURCE[0]:-}" ] && [ -f "${BASH_SOURCE[0]}" ]; then
+    SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+else
+    SCRIPT_DIR="$PWD"
+fi
 
 WORK_DIR=""
 SOURCE_DIR=""
