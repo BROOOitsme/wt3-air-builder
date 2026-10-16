@@ -1,5 +1,7 @@
 # WT Builder
 
+Download the latest version [here](https://github.com/BROOOitsme/wt3-air-builder/releases)
+
 **If you are installing it for the first time:**
 
 Extract anywhere, then run this inside of this folder:
