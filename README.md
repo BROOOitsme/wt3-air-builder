@@ -14,4 +14,4 @@ Extract anywhere, then run this inside of this folder:
     
 **IF YOU ARE ON WINDOWS**
 
-Just use [this repo](https://github.com/ask3lad/wt-testdrive3)], it has more features but only works on windows.
+Just use [this repo](https://github.com/ask3lad/wt-testdrive3), it has more features but only works on windows.
